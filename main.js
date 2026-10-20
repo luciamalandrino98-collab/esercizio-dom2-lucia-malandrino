@@ -35,7 +35,7 @@ let rubrica={
             div.innerHTML = `<div class="cardMod d-flex justify-content-between align-items-center">
                     <p class="px-2">${contatto.nome}</p>
                     <p class="px-2">${contatto.numero}</p>
-                    <i class="bi bi-trash2-fill px-2 fs-1"></i>
+                    <i class="bi bi-trash2-fill px-2 fs-1 icona"></i>
 
                 </div>`;
                 cardFolder.appendChild(div);
@@ -46,9 +46,18 @@ let rubrica={
 }
 
 
-
+let check=false;
 
 pulsanteMostrante.addEventListener("click", function(){
-rubrica.showContatti();
+    if(check==false){
+        rubrica.showContatti();
+        check=true;
+
+    }else{cardFolder.innerHTML="";
+        check=false;
+    }
+
+
+
 
 })
