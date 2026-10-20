@@ -1,0 +1,41 @@
+body{
+   background-color: lightblue;
+}
+
+
+
+
+
+
+h1 {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.btn{
+    width: 100%;
+}
+
+.cardMod{
+    width: 100%;
+    height :100px;
+    background-color: white;
+    border: 2px, dotted, black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.cardmod > p {
+    margin-bottom:0;
+}
+
+
+
+.icona{
+    cursor: pointer;
+}
